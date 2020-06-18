@@ -25,6 +25,7 @@ class CLI
         local_county = County.find_by(county_name: county_watch)
         previous_county_watch = @local_user.single_watches.select{|single_watch| single_watch.county_id == local_county.id}
         previous_county_watch.length > 0 ? (puts "Watch already exists.") : SingleWatch.create(county_id: local_county.id, user_id: @local_user.id) && (puts "A Watch has been set on the selected county!");
+        @local_user = User.find(@local_user.id)
         prompt2 = TTY::Prompt.new
         prompt2.select("What would you like to do?", cycle: true, echo: false) do |menu|
         menu.choice "Show description of Phase for a county you have a Watch on.", -> {show_phase_description}
