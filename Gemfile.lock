@@ -15,7 +15,7 @@ GEM
     arel (9.0.0)
     coderay (1.1.3)
     concurrent-ruby (1.1.6)
-    diff-lcs (1.3)
+    diff-lcs (1.4.4)
     equatable (0.6.1)
     i18n (1.8.3)
       concurrent-ruby (~> 1.0)
@@ -152,7 +152,8 @@ DEPENDENCIES
   sinatra-activerecord
   sqlite3
   tty
+  tty-command
   tty-prompt
 
 BUNDLED WITH
-   1.16.1
+   1.17.3

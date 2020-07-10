@@ -1,4 +1,4 @@
-Covid by County  - CLI APP
+COVID-19 WA Phase Tracker  - CLI APP
 
 CLI APP design
 
@@ -9,7 +9,7 @@ Table of Contents
 *Setup
 *Status
 
-Introduction
+General Info
 
 Welcome to Covid by county tracker app.  This CLI APP is designed to help keep track of Washington State Counties Covid 19 Phases.  You can do this by simply creating a username to start and then selecting the counties you would like to watch.
 
@@ -18,12 +18,17 @@ Technologies
 Ruby 5.2
 
 Setup
-
-In terminal type ruby bin/run.rb
+In terminal type
+bundle install
+rake db:migrate
+ruby bin/run.rb
 
 Status
 
 Active
+
+
+
 
 
 

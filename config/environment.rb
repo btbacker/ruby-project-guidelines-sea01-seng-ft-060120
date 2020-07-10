@@ -1,11 +1,10 @@
 require 'bundler'
 require 'pry'
+# require 'tty prompt'
 
 Bundler.require
 
 require_all 'models'
-
-ActiveRecord::Base.logger = nil
 
 ActiveRecord::Base.establish_connection(
   adapter: 'sqlite3',
